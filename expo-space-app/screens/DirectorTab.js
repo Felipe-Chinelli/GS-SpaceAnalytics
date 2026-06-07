@@ -36,7 +36,7 @@ export default function DirectorTab({ telemetry, aiLoading, aiReport, aiError, d
       </View>
 
       {/* Main AI Report / Empty Status Frame */}
-      <View style={styles.directorContentCard}>
+      <View style={[styles.directorContentCard, aiReport && !aiLoading && { justifyContent: 'flex-start' }]}>
         {aiLoading ? (
           <View style={styles.aiLoadingContainer}>
             <ActivityIndicator size="large" color="#818cf8" style={{ marginBottom: 12 }} />
@@ -44,7 +44,7 @@ export default function DirectorTab({ telemetry, aiLoading, aiReport, aiError, d
             <Text style={styles.aiProcessingSubtext}>Enviando telemetrias (Temperatura, Bateria, Link de Sinal, Atitude ACS) para o motor inteligente...</Text>
           </View>
         ) : aiReport ? (
-          <ScrollView style={styles.aiReportScroll} nestedScrollEnabled={true}>
+          <View style={styles.aiReportScroll}>
             <View style={styles.aiReportHeader}>
               <View style={styles.flexRowItems}>
                 <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#10b981' }} />
@@ -83,7 +83,7 @@ export default function DirectorTab({ telemetry, aiLoading, aiReport, aiError, d
                 );
               })}
             </View>
-          </ScrollView>
+          </View>
         ) : (
           <View style={styles.aiMockupEmptyBlock}>
             <View style={styles.aiMockupTerminalBadge}>

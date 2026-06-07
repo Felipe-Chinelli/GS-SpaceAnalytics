@@ -127,7 +127,8 @@ https://github.com/user-attachments/assets/b287bace-b04d-4bfd-83a4-f72033ec4d47
 
 
 *Você também pode assistir diretamente através de nosso link de exibição:*
-[Clique aqui para assistir à demonstração em vídeo]([https://youtube.com/...](https://youtu.be/_4stf-JfoVg))
+
+https://youtu.be/_4stf-JfoVg?si=hDyHdVi7H8Gpsh-7
 
 ---
 

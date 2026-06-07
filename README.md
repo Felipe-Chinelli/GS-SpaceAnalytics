@@ -110,7 +110,11 @@ O **Space Predictive Analytics** é uma plataforma inteligente e intuitiva de te
    npx expo start
    ```
 
-5. Abra o aplicativo **Expo Go** em seu celular dispositivo físico e faça leitura do código QR em tela, ou rode em simuladores Android/iOS vinculados.
+5. Abra o aplicativo **Expo Go** em seu celular dispositivo físico e faça leitura do código QR em tela, ou rode web apertando a tecla **W**.
+
+6. Uma vez rodando, navegue até a tela de alertas, escrole até o final, e coloque sua chave API (Pega no Google AI Studio) no campo indicado
+
+   <img width="517" height="877" alt="Image" src="https://github.com/user-attachments/assets/5f7a283c-6295-44a7-8eeb-47e63924891e" />
 
 ---
 

@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Orion Space Analytics",
+    "slug": "space-predictive-analytics",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#070A13"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#070A13"
+      }
+    }
+  }
+}

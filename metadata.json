@@ -1,0 +1,6 @@
+{
+  "name": "Space Predictive Analytics",
+  "description": "Plataforma inteligente de análise preditiva para monitoramento de sistemas espaciais e operações orbitais simuladas com integração IA Gemini.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

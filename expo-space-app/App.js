@@ -336,14 +336,14 @@ Analise agora o seguinte status de telemetria em órbita:
 Alertas Ativos detectados pelo sistema:
 ${alerts.length === 0 ? 'NENHUM ANOMALIA ESTRUTURAL ATIVA' : alerts.map(a => `- ALERTA: [${a.system}] ${a.msg}`).join('\n')}
 
-Por favor, gere um parecer operacional completo, detalhado e aprofundado do satélite em português brasileiro estruturado em exatamente 3 seções completas e detalhadas:
+Por favor, gere um parecer operacional completo, detalhado e aprofundado do satélite em português brasileiro estruturado em exatamente 3 seções completas e detalhadas. IMPORTANTE: forneça explicações aprofundadas, completas e ricas em detalhes técnicos para cada seção, explicando os fenômenos físicos e operacionais envolvidos. Não economize espaço e evite resumos:
 1. DIAGNÓSTICO DO CENÁRIO (Diagnóstico e resumo aprofundado do estado físico e operacional de todos os sistemas, com detalhes sobre as leituras atuais)
 2. RISCO POTENCIAL PRESCIENT (Análise de engenharia aeroespacial sobre o que pode acontecer nos próximos períodos orbitais caso nenhuma manobra de mitigação seja tomada)
 3. MANOBRAS OPERACIONAIS RECOMENDADAS (Instruções passo a passo ricas e completas que os operadores de solo devem emitir via enlace para garantir a integridade da missão)`;
 
     try {
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey.trim()}`,
         {
           method: 'POST',
           headers: {

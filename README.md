@@ -14,9 +14,9 @@ O **Space Predictive Analytics** é uma plataforma inteligente e intuitiva de te
 
 | Nome | RM |
 |------|----|
-| Nome Completo | RM000000 |
-| Nome Completo | RM000000 |
-| Nome Completo | RM000000 |
+| Felipe Rodrigues Ribeiro dos Santos| RM: 565271 |
+| Manoela Oliveira Bello             | RM: 563952 |
+| Ryan Amorim De Castro Santana      | RM: 564393 |
 
 ---
 
@@ -102,7 +102,7 @@ O **Space Predictive Analytics** é uma plataforma inteligente e intuitiva de te
 
 3. Instale as dependências declaradas no package.json:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 4. Dispare o servidor de desenvolvimento Expo:

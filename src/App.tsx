@@ -847,7 +847,7 @@ export default function App() {
                           </div>
                           <span className="text-[10px] text-slate-500 font-mono">{new Date().toLocaleTimeString()}</span>
                         </div>
-                        <div className="text-slate-300 space-y-3 text-xs leading-relaxed overflow-y-auto max-h-[250px] pr-2 scrollbar-thin scrollbar-thumb-indigo-950">
+                        <div className="text-slate-300 space-y-3 text-xs leading-relaxed overflow-y-auto max-h-[700px] pr-2 scrollbar-thin scrollbar-thumb-indigo-950">
                           {aiAnalysis.split('\n').map((line, idx) => {
                             if (line.trim().startsWith('**') || line.trim().startsWith('1.') || line.trim().startsWith('2.') || line.trim().startsWith('3.')) {
                               return <p key={idx} className="font-bold text-emerald-400 mt-2 font-mono">{line}</p>;

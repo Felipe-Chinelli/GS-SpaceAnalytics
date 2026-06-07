@@ -336,10 +336,10 @@ Analise agora o seguinte status de telemetria em órbita:
 Alertas Ativos detectados pelo sistema:
 ${alerts.length === 0 ? 'NENHUM ANOMALIA ESTRUTURAL ATIVA' : alerts.map(a => `- ALERTA: [${a.system}] ${a.msg}`).join('\n')}
 
-Por favor, gere um curto parecer operacional do satélite em português brasileiro em exatamente 3 seções curtas com formatação simples:
-1. DIAGNÓSTICO DO CENÁRIO (Resumo do estado físico de anomalia ou se está tudo ok)
-2. RISCO POTENCIAL PRESCIENT (O que pode acontecer se não for corrigido)
-3. MANOBRAS OPERACIONAIS RECOMENDADAS (Quais comandos os operadores de solo devem emitir via enlace para sanar quaisquer problemas)`;
+Por favor, gere um parecer operacional completo, detalhado e aprofundado do satélite em português brasileiro estruturado em exatamente 3 seções completas e detalhadas:
+1. DIAGNÓSTICO DO CENÁRIO (Diagnóstico e resumo aprofundado do estado físico e operacional de todos os sistemas, com detalhes sobre as leituras atuais)
+2. RISCO POTENCIAL PRESCIENT (Análise de engenharia aeroespacial sobre o que pode acontecer nos próximos períodos orbitais caso nenhuma manobra de mitigação seja tomada)
+3. MANOBRAS OPERACIONAIS RECOMENDADAS (Instruções passo a passo ricas e completas que os operadores de solo devem emitir via enlace para garantir a integridade da missão)`;
 
     try {
       const response = await fetch(
@@ -360,8 +360,8 @@ Por favor, gere um curto parecer operacional do satélite em português brasilei
               }
             ],
             generationConfig: {
-              temperature: 0.35,
-              maxOutputTokens: 800
+              temperature: 0.45,
+              maxOutputTokens: 2048
             }
           })
         }

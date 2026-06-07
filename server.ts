@@ -106,18 +106,20 @@ DADOS DE TELEMETRIA DO SISTEMA:
 - Velociade: ${telemetry.velocity.toFixed(1)} km/h
 - Status do Satélite: ${telemetry.isEclipse ? 'Eclipsado (Sombra da Terra)' : 'Condição de Luz Solar'}
 
-Instruções para análise preditiva (Por favor, responda em formato Markdown estruturado e profissional com linguagem técnica mas legível, em Português):
-1. **Status Geral de Saúde**: Classifique a saúde atual em CRÍTICO, ALERTA ou NOMINAL.
-2. **Análise de Anomalia Preditiva**: Faça uma previsão matemática ou física qualitativa do que pode dar errado nos próximos 3 passos de órbita (Ex: perda total de energia por eclipse, reentrada atmosférica se houver perda de altitude, risco de instabilidade térmica).
-3. **Plano de Contingência Recomendado**: Indique as telemetrias de mitigação imediatas que devem ser injetadas (Ex: alinhar painéis solares, reduzir amostragem de dados, iniciar propulsão para correção de atitude).
-4. **Comentário de IA**: Um comentário direto, conciso e encorajador.
-
-Gere uma resposta de alta precisão.
+Instruções para análise preditiva (Por favor, responda em formato Markdown estruturado e profissional com linguagem técnica mas legível, em Português). IMPORTANTE: forneça explicações aprofundadas, completas e ricas em detalhes técnicos para cada seção, explicando os fenômenos físicos e operacionais envolvidos. Não faça respostas curtas ou resumidas:
+1. **Status Geral de Saúde**: Classifique a saúde atual em CRÍTICO, ALERTA ou NOMINAL com justificativa técnica.
+2. **Análise de Anomalia Preditiva**: Faça uma previsão detalhada e aprofundada do que pode acontecer nos próximos períodos de órbita (como perda de energia em eclipses prolongados, risco de instabilidade térmica ou decaimento orbital).
+3. **Plano de Contingência Recomendado**: Indique as instruções passo a passo completas e precisas que os operadores devem emitir via enlace para mitigar os problemas detectados.
+4. **Comentário de IA**: Um parecer encorajador da diretoria de vôo.
 `;
 
     const response = await ai.models.generateContent({
       model: 'gemini-3.5-flash',
       contents: prompt,
+      config: {
+        temperature: 0.45,
+        maxOutputTokens: 2048,
+      },
     });
 
     res.json({
